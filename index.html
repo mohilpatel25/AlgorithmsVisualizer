@@ -30,16 +30,16 @@
       <table border=1 height="200px" width="80%">
         <tr>
           <td width="15%">
-            <div>Insertion Sort</div>
-            <div>No. of entries: <span id="insert_number">50</span></div>
-            <div><input type="range" min="10" max="100" value="50" class="slider" id="insert_slider" oninput="document.getElementById('insert_number').innerHTML = this.value;"></div>
+            <div>Selection Sort</div>
+            <div>No. of entries: <span id="select_number">50</span></div>
+            <div><input type="range" min="10" max="100" value="50" class="slider" id="select_slider" oninput="document.getElementById('select_number').innerHTML = this.value;"></div>
             <div>
-              <button onclick="insert_generate(document.getElementById('insert_slider').value)" id="insert_generate_button">Generate</button>&nbsp;
-              <button onclick="insert_sort(document.getElementById('insert_slider').value)" id="insert_sort_button">Sort</button>
+              <button onclick="select_generate(document.getElementById('select_slider').value)" id="select_generate_button">Generate</button>&nbsp;
+              <button onclick="select_sort(document.getElementById('select_slider').value)" id="select_sort_button">Sort</button>
             </div>
           </td>
           <td>
-            <div class="chart" id="insert_chart" align="center">
+            <div class="chart" id="select_chart" align="center">
             </div>
           </td>
         </tr>
