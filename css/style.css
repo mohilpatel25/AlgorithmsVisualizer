@@ -1,0 +1,20 @@
+div{
+    padding: 10px 10px 10px 10px;
+}
+.chart{
+    display: grid;
+    grid-template-columns: repeat(50, 1fr);
+    grid-template-rows: repeat(100, 1fr);
+    grid-column-gap: 5px;
+    height: 200px;
+    width: 70vw;
+    padding: 5px 10px;
+}
+[class*="bars"] {
+    margin: 0;
+    padding: 0;
+    border-radius: 5px 5px 0 0;
+    transition: all ease;
+    grid-row-end: 102;
+    background-color: #4B0082;
+}
